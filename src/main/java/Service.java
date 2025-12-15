@@ -21,10 +21,10 @@ public class Service {
             return null;
         }
 
-        if (!users.getName().isBlank()) {
+        if (users.getName() != null && !users.getName().isBlank()) {
             updatingUsers.setName(users.getName());
         }
-        if (!users.getEmail().isBlank()) {
+        if (users.getEmail() != null && !users.getEmail().isBlank()) {
             updatingUsers.setEmail(users.getEmail());
         }
         if (users.getAge() != null) {
