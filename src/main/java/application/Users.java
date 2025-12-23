@@ -1,6 +1,8 @@
+package application;
+
 import jakarta.persistence.*;
 
-import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity
@@ -20,9 +22,16 @@ public class Users {
     private Integer age;
 
     @Column
-    private Instant createdAt;
+    private LocalDateTime createdAt;
 
     public Users() {
+    }
+
+    public Users(String name, String email, Integer age, LocalDateTime createdAt) {
+        this.name = name;
+        this.email = email;
+        this.age = age;
+        this.createdAt = createdAt;
     }
 
     public Integer getAge() {
@@ -41,11 +50,11 @@ public class Users {
         this.email = email;
     }
 
-    public Instant getCreatedAt() {
+    public LocalDateTime getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(Instant createdAt) {
+    public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
 
