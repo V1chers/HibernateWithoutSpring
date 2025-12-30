@@ -1,0 +1,9 @@
+spring:
+  jpa.hibernate.ddl-auto: update
+  datasource:
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:postgresql:11.1:///integration-tests-db
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
