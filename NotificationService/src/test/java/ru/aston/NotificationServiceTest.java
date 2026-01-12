@@ -39,6 +39,7 @@ public class NotificationServiceTest {
     @Test
     void sendNotification_withActionCreated_shouldSendNotification() throws Exception {
         NotificationEvent notificationEvent = createNotificationEvent();
+        notificationEvent.setAction(NotificationEvent.Action.CREATED);
 
         notificationService.sendNotification(notificationEvent);
 
