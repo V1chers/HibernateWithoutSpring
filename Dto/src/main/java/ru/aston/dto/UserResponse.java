@@ -1,13 +1,14 @@
 package ru.aston.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.hateoas.RepresentationModel;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-public class UserResponse {
+public class UserResponse extends RepresentationModel<UserResponse> {
 
-    private int id;
+    private Integer id;
 
     private String name;
 
