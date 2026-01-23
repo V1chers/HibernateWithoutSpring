@@ -15,6 +15,6 @@ import java.lang.annotation.Target;
         @ApiResponse(responseCode = "400", description = "Ошибка в запросе",
                 content = @Content),
         @ApiResponse(responseCode = "500", description = "Ошибка сервера",
-                content = @Content) })
+                content = @Content)})
 public @interface SimpleControllerResponses {
 }
