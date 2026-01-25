@@ -10,17 +10,12 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.TestPropertySource;
 import org.testcontainers.shaded.com.google.common.base.Charsets;
 import ru.aston.event.NotificationEvent;
 
 import static com.icegreen.greenmail.configuration.GreenMailConfiguration.aConfig;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@TestPropertySource(properties = {
-        "spring.mail.host=localhost",
-        "spring.mail.port=3025"
-})
 @SpringBootTest
 public class NotificationServiceTest {
 

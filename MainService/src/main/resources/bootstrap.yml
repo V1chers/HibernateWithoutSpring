@@ -5,3 +5,5 @@ spring:
     config:
       uri: http://localhost:7070
       name: main-service,eureka
+      overrideNone: true
+      overrideSystemProperties: false

@@ -1,7 +1,5 @@
 spring:
-  application:
-    name: gateway
   cloud:
     config:
       uri: http://localhost:7070
-      name: eureka
+      name: api-gateway,eureka

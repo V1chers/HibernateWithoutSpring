@@ -1,0 +1,12 @@
+server.port: 9090
+
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/db
+  kafka:
+    bootstrap-servers: kafka:9092
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6060/eureka/
