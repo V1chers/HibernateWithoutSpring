@@ -1,0 +1,17 @@
+server.port: 8080
+
+spring:
+  mail:
+    host: localhost
+    port: 3025
+
+  kafka.consumer:
+    bootstrap-servers: localhost:9092
+    key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
+    value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    group-id: notification
+    properties.spring.json.trusted.packages: "*"
+
+eureka:
+  client:
+    enabled: false
